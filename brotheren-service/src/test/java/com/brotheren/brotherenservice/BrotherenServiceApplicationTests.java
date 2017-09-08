@@ -1,4 +1,4 @@
-package com.brotheren.brothereneventservice;
+package com.brotheren.brotherenservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BrotherenEventserviceApplicationTests {
+public class BrotherenServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {
