@@ -1,0 +1,15 @@
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Bortheren.dll
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Bortheren.pdb
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\obj\Debug\Bortheren.csprojResolveAssemblyReference.cache
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\obj\Debug\Bortheren.MainPage.xaml.g.cs
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\obj\Debug\Bortheren.App.xaml.g.cs
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\obj\Debug\Bortheren.dll
+C:\Users\venky\Source\Repos\brotheren\Bortheren\Bortheren\Bortheren\obj\Debug\Bortheren.pdb
