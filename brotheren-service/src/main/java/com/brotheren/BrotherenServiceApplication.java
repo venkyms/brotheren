@@ -1,14 +1,16 @@
-package com.brotheren.brotherenservice;
+package com.brotheren;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-@ComponentScan({"com.brotheren"})
 public class BrotherenServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BrotherenServiceApplication.class, args);
 	}
+
 }
