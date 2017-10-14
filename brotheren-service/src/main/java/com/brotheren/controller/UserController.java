@@ -1,23 +1,30 @@
 package com.brotheren.controller;
 
 import com.brotheren.model.UserData;
+import com.brotheren.service.EmailService;
 import com.brotheren.service.UserDataService;
-import com.brotheren.service.UserDataServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.mail.MessagingException;
 import java.net.URI;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 @ComponentScan({"com.brotheren"})
 public class UserController {
 
     private UserDataService userDataService;
+
+    private EmailService emailService;
+
+    @Autowired
+    public void setEmailService(EmailService emailService) {
+        this.emailService = emailService;
+    }
 
     @Autowired
     public void setUserDataService(UserDataService userDataService) {
@@ -34,18 +41,18 @@ public class UserController {
         return userDataService.listAll();
     }
 
-
-    //    @RequestMapping("/userdata/{id}")
-    @GetMapping("/userdata/{id}")
+//    @GetMapping("/userdata/{id}")
+    @RequestMapping("/userdata/{id}")
     public UserData retrieveUser(@PathVariable String id) {
         System.out.println("retrieveUser:" + id);
         return userDataService.getById(id);
     }
 
     @RequestMapping(value = "/userdata/add", method = RequestMethod.POST)
-    public ResponseEntity<Void> addUser(@RequestBody UserData userData) {
+    public ResponseEntity<Void> addUser(@RequestBody UserData userData) throws MessagingException {
         userDataService.saveOrUpdate(new UserData(userData.getId(), userData.getUserId(), userData.getPhone(), userData.getEmail(), userData.getFirstName(), userData.getLastName()));
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{userId}").buildAndExpand(userData.getUserId()).toUri();
+        emailService.sendEmail(userData.getEmail());
         return ResponseEntity.created(location).build();
     }
 
